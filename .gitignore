@@ -40,3 +40,7 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+### 직접 추가 ###
+.gradle
+.idea
