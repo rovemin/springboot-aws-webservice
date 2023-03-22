@@ -17,11 +17,13 @@ repositories {
 // 프로젝트 개발에 필요한 의존성들 선언
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.2'
+    testImplementation 'junit:junit:4.13.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.2'
-    // 웹에 관련된 의존성 관리. json이나 tomcat 등이 들어있음
-    implementation('org.springframework.boot:spring-boot-starter-web')
-    // 테스트를 위한 라이브러리가 들어있음
-    testImplementation('org.springframework.boot:spring-boot-starter-test')
+    implementation('org.springframework.boot:spring-boot-starter-web')  // 웹에 관련된 의존성 관리. json이나 tomcat 등이 들어있음
+    testImplementation('org.springframework.boot:spring-boot-starter-test') // 테스트를 위한 라이브러리가 들어있음
+    //implementation('org.projectlombok:lombok')    //gradle이 버전 4인 경우
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
 }
 
 // Junit5를 사용하기 위해 필수로 선언
