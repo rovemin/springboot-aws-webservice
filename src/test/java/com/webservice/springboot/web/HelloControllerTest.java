@@ -10,7 +10,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 import static org.hamcrest.Matchers.is;
 
-@WebMvcTest(controllers = HelloController.class)    // Web(Spring MVC)에 집중할 수 있는 어노테이션
+@WebMvcTest(controllers = HelloController.class)        // Web(Spring MVC)에 집중할 수 있는 어노테이션
                                                         // 내부에 @ExtendWith(SpringExtension.class) 적용되어 있음
     // 선언 시 @Controller, @ControllerAdvice 등은 사용 가능하지만, @Service, @Component, @Repository 등은 사용 불가
 public class HelloControllerTest {
