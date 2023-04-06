@@ -44,3 +44,5 @@ bin/
 ### 직접 추가 ###
 .gradle
 .idea
+
+application-oauth.properties
